@@ -1,0 +1,19 @@
+  Bubble Sort algorithm, which sorts an array by repeatedly comparing adjacent elements and swapping them if they are in the wrong order.
+The algorithm iterates through the array multiple times, with each pass pushing the largest unsorted element to its correct position at the end.
+
+def bubblesort(elements):
+	swapped = False
+	for n in range(len(elements)-1, 0, -1):
+		for i in range(n):
+			if elements[i] > elements[i + 1]:
+				swapped = True
+				elements[i], elements[i + 1] = elements[i + 1], elements[i]	 
+			return
+
+elements = [39, 12, 18, 85, 72, 10, 2, 18]
+
+print("Unsorted list is,")
+print(elements)
+bubblesort(elements)
+print("Sorted Array is, ")
+print(elements)
